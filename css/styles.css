@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Betania+Patmos&family=Dancing+Script:wght@400..700&family=Elsie:wght@400;900&family=Playwrite+NG+Modern:wght@100..400&display=swap');
+
+/* Make images flexible */
+img{
+    max-width: 100%;
+}
+
+/* Mobile first design */
+body{
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    /* font changes */
+    font-family: "Elsie", serif;
+    color: #FFF5EE;
+    text-align: center;
+    font-size: medium;
+    
+    background-color: #96572a;
+    
+}
+
+header{
+    background-color: #C29CB0;
+    border-radius: 0.625em;
+    text-align: center; 
+    padding: 0.5em;
+    
+}
+
+
+footer{ 
+    background-color: #C29CB0;
+    border-radius: 1.0em;
+    text-align: center; 
+    padding: 2.0em;
+    margin: 25em 0 0;
+}
+
+nav{
+    font-size: 1.5em;
+    text-align: center;
+    
+}
+
+    /* Nested selector*/
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+
+    /* Spread the list out */
+    margin: 0.2em;
+    padding: 0.5em;    
+}
+
+a{
+    color:#96572a;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration-color:#96572a;
+}
+
+.desktop{
+    display: none;
+}
+
+ /* Form Styles */
+    
+    form{
+          
+        margin: 5.0em 0 0 0;
+        margin-bottom: 5.0em;
+        
+    
+    }
+    
+    fieldset{
+        
+        border-color:#C29CB0;
+        border-style:double;
+        border-radius: 3.0em;
+        width:90%;
+        margin: 0 auto;
+        padding:2.0em;
+        
+    }
+    
+    legend{
+        font-size:xx-large;
+        
+        
+    }
+
+#Details {
+    padding:10px;
+    
+}
+
+input[type="submit"] { 
+    
+    margin: 5.0em auto;
+    padding: 1.5em 1.5em;
+    background-color:#C29CB0;
+    color:#96572a;
+    font-family: "Elsie", serif;
+    font-size: 1.5em;
+    border-radius: 1.0em;
+    border-color:#FFF5EE;
+}
+
+input[type="reset"]{
+    margin: 5.0em auto;
+    padding: 1.5em 1.5em;
+    background-color:#C29CB0;
+    color:#FFF5EE;
+    font-family: "Elsie", serif;
+    font-size: 1.5em;
+    border-radius: 1.0em;
+    border-color:#FFF5EE;
+    
+}
+
+/* tablet design */
+@media only screen and (min-width:481px) and (max-width:1270px) {
+    
+    nav li{ 
+        display:inline;
+        padding: 0;
+    }
+    footer {
+        background-color: #C29CB0;
+        border-radius: 1.0em;
+        text-align: center; 
+        margin-top: 0;
+        
+    }
+}
+
+/*Desktop desisgn */
+@media only screen and (min-width:1271px) {
+    nav li{
+        display:inline;
+        padding:0;
+        
+    }
+    
+}
+
+/* mobile design */
+@media only screen and (min-width:300px) and (max-width:860px) {
+    footer {
+        margin-bottom: 0;
+    }
+    nav li{ 
+        display:inline;
+        padding: 3.0px;
+    
+    }
+    
+}
+ 
